@@ -1,0 +1,68 @@
+/* 選択の角丸くする */
+#switch
+  .addwebpanel-wrapper
+  > button:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):hover,
+#switch
+  > .button-toolbar:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):hover,
+#switch
+  > *
+  > .button-toolbar:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):hover,
+#switch
+  > button:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):hover,
+#switch
+  .addwebpanel-wrapper
+  > button:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):active,
+#switch
+  > .button-toolbar:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):active,
+#switch
+  > *
+  > .button-toolbar:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):active,
+#switch
+  > button:not(
+    .toolbar-spacer,
+    .toolbar-spacer-panel,
+    .toolbar-spacer-flexible,
+    .toolbar-divider
+  ):active {
+  border-radius: var(--radius);
+}
+
+/*ブックマークバーアイコンの中央揃え*/
+.bookmark-bar .observer {
+  justify-content: center !important;
+}

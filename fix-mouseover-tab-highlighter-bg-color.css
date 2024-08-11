@@ -1,0 +1,8 @@
+/* fix mouseover tab highlighter bg color */
+.theme-dark.color-behind-tabs-off .tab-position .tab:hover:not(.active) {
+  background-color: var(--colorImageBgAlpha, var(--colorBgLighter));
+}
+
+.theme-light.color-behind-tabs-off .tab-position .tab:hover:not(.active) {
+  background-color: var(--colorImageBgAlpha, var(--colorBgDark));
+}

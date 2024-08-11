@@ -1,0 +1,218 @@
+/*アドレスバー背景色を設定画面などの背景に合わせる*/
+:is(.UrlBar-AddressField, .UrlBar-SearchField),
+:is(.UrlBar-AddressField, .UrlBar-SearchField):focus {
+  background-color: var(--colorBg) !important;
+}
+
+/*アドレスバー境界線を削除*/
+:is(.UrlBar-AddressField, .UrlBar-SearchField),
+:is(.UrlBar-AddressField, .UrlBar-SearchField):focus {
+  border: none !important;
+  outline: none !important;
+}
+
+/*アドレスバー背景を透明化*/
+:is(.UrlBar-AddressField, .UrlBar-SearchField),
+:is(.UrlBar-AddressField, .UrlBar-SearchField):focus {
+  background: transparent !important;
+}
+
+/*ブックマークバーアイコンフォーカス時のデザイン変更*/
+.color-behind-tabs-off .bookmark-bar button:focus,
+.color-behind-tabs-off .bookmark-bar button:hover {
+  background-color: #eea047c1; /*好きな色に変更可能*/
+  border-radius: var(--radius); /*角丸具合*/
+}
+
+/*ブックマークバー背景透明化＆すりガラス化*/
+.bookmark-bar,
+.bookmark-bar button {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*ブックマークバー枠線を除去*/
+.bookmark-bar {
+  border: none !important;
+}
+
+/*パネル翻訳パネルの入力、出力部分の背景透明化*/
+.panel :is(.TranslatePanel-SrcText, .TranslatePanel-TranslatedText) {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/*ツールバー背景の透明化*/
+.mainbar {
+  background: transparent !important;
+}
+
+/*ツールバーブックマークバーとの境界線削除*/
+.mainbar {
+  border-bottom: none !important;
+}
+
+/*ヘッダー背景の透明化*/
+div#header {
+  background-color: transparent !important;
+}
+
+/*上タブとツールバーの間にある境界線削除*/
+div#tabs-tabbar-container {
+  box-shadow: none !important;
+}
+
+/*パネル背景の透明化*/
+#panels-container,
+.panel-group {
+  background-color: transparent !important;
+}
+
+/*パネル影の削除*/
+#panels-container {
+  box-shadow: none !important;
+}
+
+/*ステータスバー背景の透明化*/
+footer {
+  background: transparent !important;
+  box-shadow: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*ステータスバーステータスバーの上にある境界線非表示*/
+footer::after {
+  display: none !important;
+}
+
+/*ステータスバー背景の透明化＆角丸化*/
+#webview-container ~ .StatusInfo .StatusInfo-Content {
+  background-color: var(
+    --colorBgAlphaHeavy
+  ) !important; /*背景で指定した色の65%の不透明度*/
+  border: none !important;
+  border-radius: var(--radius) !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*アドレスバー「検索またはアドレスを入力」を非表示*/
+.UrlField > input[placeholder$="アドレスを入力"]::placeholder {
+  color: transparent !important;
+}
+
+/*アドレスバードロップダウンリストの透明化*/
+.UrlBar-UrlFieldWrapper .OmniDropdown {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*クイックコマンド背景の透明化*/
+#modal-bg.qc-modal > div,
+#modal-bg.qc-modal > div .quick-commands {
+  background: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*スピードダイヤルのプライバシー統計バー*/
+.SpeedDial-Blocked-Counter {
+  background-color: transparent !important;
+}
+
+/* ナビゲーションバー透明化 */
+.startpage .startpage-navigation {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/*ダイアログ関連（セッション、プライバシー統計バー）*/
+#modal-bg.slide > div {
+  border-radius: var(--radius) !important; /*角丸化強化*/
+}
+
+/*ブックマークマネージャー透明化*/
+.bookmark.manager :is(.toolbar, .sortselector, .manager-content) {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*履歴（vivaldi://history/）透明化*/
+.history.manager
+  :is(.toolbar, .sortselector, .manager-content, .tree-row.folder) {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*メモ（vivaldi://notes/）ページ透明化*/
+.NotesManager,
+.NotesManager :is(.toolbar, .sortselector) {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/*スピードダイヤル背景の透明化*/
+.startpage .dial {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.SpeedDialView-Settings.navigation-title {
+  background: transparent !important;
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+#modal-bg.Privacy-Stats-Modal .modal-wrapper,
+.TabbedView-List,
+.sortselector {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/* ワークスペースの透明化 */
+.button-popup,
+.theme-dark .WorkspacePopup {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+.theme-dark .WorkspacePopup-Items .workspace-item-wrapper,
+.theme-dark .WorkspacePopup-Items .this-window {
+  background-color: transparent !important;
+}
+
+.theme-dark .WorkspacePopup-Items :is(.workspace-item-wrapper, .this-window) {
+  background-color: transparent !important;
+}
+
+:not(:active).WorkspacePopup-Items
+  :is(.workspace-item-wrapper:hover, .this-window:hover) {
+  background-color: #4930308a;
+}
+
+/* 検索バー透明化 */
+.find-in-page-wrapper {
+  background-color: transparent !important;
+  border-bottom: none !important;
+}
+
+/* ページプレビューを部分透明化 */
+#vivaldi-tooltip .tooltip .tooltip-item {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/* ツールバーエディターの透明化 */
+#modal-bg .modal-wrapper,
+#modal-bg.toolbar-editor section.dialog-preview,
+.dialog-footer {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
+
+/* ツールバーの境界線を削除 */
+#modal-bg.toolbar-editor section.dialog-preview,
+.dialog-footer {
+  border: none !important;
+}
