@@ -66,3 +66,8 @@
 .bookmark-bar .observer {
   justify-content: center !important;
 }
+
+/*ダイアログ関連（セッション、プライバシー統計バー）*/
+#modal-bg.slide > div {
+  border-radius: var(--radius) !important; /*角丸化強化*/
+}

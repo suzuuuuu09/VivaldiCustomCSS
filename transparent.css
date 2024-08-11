@@ -126,11 +126,6 @@ footer::after {
   box-shadow: none !important;
 }
 
-/*ダイアログ関連（セッション、プライバシー統計バー）*/
-#modal-bg.slide > div {
-  border-radius: var(--radius) !important; /*角丸化強化*/
-}
-
 /*ブックマークマネージャー透明化*/
 .bookmark.manager :is(.toolbar, .sortselector, .manager-content) {
   background-color: transparent !important;
@@ -198,7 +193,7 @@ footer::after {
 }
 
 /* ページプレビューを部分透明化 */
-#vivaldi-tooltip .tooltip .tooltip-item {
+#vivaldi-tooltip .tooltip :is(.tooltip-item, .tab-group) {
   background-color: transparent !important;
   backdrop-filter: var(--backgroundBlur) !important;
 }
@@ -214,5 +209,20 @@ footer::after {
 /* ツールバーの境界線を削除 */
 #modal-bg.toolbar-editor section.dialog-preview,
 .dialog-footer {
+  border: none !important;
+}
+
+/* 翻訳ポップアップ透明化&境界線削除 */
+.TranslatePopup {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+  border: none !important;
+}
+
+/* ブックマークのポップアップ透明化&境界線削除 */
+.BookmarkPopup,
+.BookmarkPopup .dialog-header {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
   border: none !important;
 }
