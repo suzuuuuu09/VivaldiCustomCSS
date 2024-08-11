@@ -71,3 +71,8 @@
 #modal-bg.slide > div {
   border-radius: var(--radius) !important; /*角丸化強化*/
 }
+
+/* Vivaldiマークの右にある矢印削除 */
+.vivaldi .expand-arrow {
+  display: none;
+}

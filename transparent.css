@@ -226,3 +226,10 @@ footer::after {
   backdrop-filter: var(--backgroundBlur) !important;
   border: none !important;
 }
+
+/* 設定画面透明化 */
+.vivaldi-settings,
+.vivaldi-settings :is(.settings-content, .settings-sidebar) {
+  background-color: transparent !important;
+  backdrop-filter: var(--backgroundBlur) !important;
+}
