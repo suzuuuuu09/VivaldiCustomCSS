@@ -1,78 +1,37 @@
-/* 選択の角丸くする */
-#switch
-  .addwebpanel-wrapper
-  > button:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):hover,
-#switch
-  > .button-toolbar:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):hover,
-#switch
-  > *
-  > .button-toolbar:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):hover,
-#switch
-  > button:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):hover,
-#switch
-  .addwebpanel-wrapper
-  > button:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):active,
-#switch
-  > .button-toolbar:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):active,
-#switch
-  > *
-  > .button-toolbar:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):active,
-#switch
-  > button:not(
-    .toolbar-spacer,
-    .toolbar-spacer-panel,
-    .toolbar-spacer-flexible,
-    .toolbar-divider
-  ):active {
-  border-radius: var(--radius);
-}
-
 /*ブックマークバーアイコンの中央揃え*/
 .bookmark-bar .observer {
   justify-content: center !important;
 }
 
-/*ダイアログ関連（セッション、プライバシー統計バー）*/
+/*ダイアログ関連（セッション、プライバシー統計バー）角丸化強化*/
 #modal-bg.slide > div {
-  border-radius: var(--radius) !important; /*角丸化強化*/
+  border-radius: var(--radius) !important;
 }
 
 /* Vivaldiマークの右にある矢印削除 */
 .vivaldi .expand-arrow {
   display: none;
+}
+
+/* 拡張機能の選択角丸 */
+.toolbar-extensions * {
+  border-radius: 50% 50% 0 50% !important;
+  overflow: hidden !important;
+}
+
+/* サイドバーの選択の形をいい感じにする */
+.icons #switch .addwebpanel-wrapper > button,
+.icons #switch > .button-toolbar,
+.icons #switch > * > .button-toolbar,
+.icons #switch > button {
+  border-radius: 50% 50% 0 50% !important;
+  overflow: hidden !important;
+}
+
+/* 検索設定のURL入力欄を長くする */
+.vivaldi-settings .setting-search-engine.master-detail .setting-group {
+  display: block;
+  width: auto;
+  margin-right: 0;
+  max-width: 100%;
 }
