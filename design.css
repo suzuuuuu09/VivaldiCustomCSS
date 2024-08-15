@@ -13,6 +13,12 @@
   display: none;
 }
 
+/* ワークスペースの矢印削除 */
+.button-toolbar.button-menu .button-toolbar-menu-indicator.disabled {
+  display: none;
+  
+}
+
 /* 拡張機能の選択角丸 */
 .toolbar-extensions * {
   border-radius: 50% 50% 0 50% !important;
