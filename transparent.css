@@ -233,3 +233,16 @@ footer::after {
   background-color: transparent !important;
   backdrop-filter: var(--backgroundBlur) !important;
 }
+
+/* 時計の透明化 */
+.ClockPopup-Header,
+.ClockPopup .toolbar,
+.ClockPopup-Alarms,
+.ClockPopup-Countdowns {
+  background-color: transparent !important;
+}
+
+/*ツールバーの透明化 */
+.button-popup.ToolbarButtonPopup-DefaultStyles h2 {
+  background-color: transparent !important;
+}
